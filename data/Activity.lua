@@ -5,7 +5,6 @@ C.ACTIVITY = {
     [  21] = { difficulty = 1, category = 2, mapID = 1175, cmID =   0 }, -- Bloodmaul Slag Mines (Normal)
     [  22] = { difficulty = 1, category = 2, mapID = 1195, cmID =   0 }, -- Iron Docks (Normal)
     [  23] = { difficulty = 1, category = 2, mapID = 1182, cmID =   0 }, -- Auchindoun (Normal)
-    [  23] = { difficulty = 1, category = 2, mapID = 1182, cmID =   0 }, -- Auchindoun (Normal)
     [  24] = { difficulty = 1, category = 2, mapID = 1209, cmID =   0 }, -- Skyreach (Normal)
     [  25] = { difficulty = 1, category = 2, mapID = 1208, cmID =   0 }, -- Grimrail Depot (Normal)
     [  26] = { difficulty = 1, category = 2, mapID = 1279, cmID =   0 }, -- The Everbloom (Normal)
