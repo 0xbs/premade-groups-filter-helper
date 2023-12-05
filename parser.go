@@ -47,6 +47,48 @@ func parseGroupFinderActivity(source io.Reader) []GroupFinderActivity {
 	return entries
 }
 
+func parseGroupFinderActivityWrath(source io.Reader) []GroupFinderActivityWrath {
+	csvReader := csv.NewReader(source)
+
+	records, err := csvReader.ReadAll()
+	if err != nil {
+		logger.Fatalf("failed to read CSV records: %v", err)
+	}
+
+	var entries []GroupFinderActivityWrath
+
+	for i, record := range records {
+		if i == 0 {
+			continue // ignore header
+		}
+
+		entry := GroupFinderActivityWrath{
+			ID:                       atoi(record[0]),
+			FullName_lang:            record[1],
+			ShortName_lang:           record[2],
+			GroupFinderCategoryID:    atoi(record[3]),
+			OrderIndex:               atoi(record[4]),
+			GroupFinderActivityGrpID: atoi(record[5]),
+			Field_3_4_0_43659_005:    atoi(record[6]),
+			Flags:                    atoi(record[7]),
+			MinGearLevelSuggestion:   atoi(record[8]),
+			PlayerConditionID:        atoi(record[9]),
+			MapID:                    atoi(record[10]),
+			DifficultyID:             atoi(record[11]),
+			AreaID:                   atoi(record[12]),
+			MaxPlayers:               atoi(record[13]),
+			DisplayType:              atoi(record[14]),
+			MinLevel:                 atoi(record[15]),
+			MaxLevelSuggestion:       atoi(record[16]),
+			IconFileDataID:           atoi(record[17]),
+		}
+
+		entries = append(entries, entry)
+	}
+
+	return entries
+}
+
 func parseMapChallengeMode(source io.Reader) []MapChallengeMode {
 	csvReader := csv.NewReader(source)
 

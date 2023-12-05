@@ -24,6 +24,26 @@ type GroupFinderActivity struct {
 	OverrideContentTuningID  int
 	MapChallengeModeID       int
 }
+type GroupFinderActivityWrath struct {
+	ID                       int
+	FullName_lang            string
+	ShortName_lang           string
+	GroupFinderCategoryID    int
+	OrderIndex               int
+	GroupFinderActivityGrpID int
+	Field_3_4_0_43659_005    int
+	Flags                    int
+	MinGearLevelSuggestion   int
+	PlayerConditionID        int
+	MapID                    int
+	DifficultyID             int
+	AreaID                   int
+	MaxPlayers               int
+	DisplayType              int
+	MinLevel                 int
+	MaxLevelSuggestion       int
+	IconFileDataID           int
+}
 
 type MapChallengeMode struct {
 	Name_lang      string
@@ -55,6 +75,35 @@ var difficultyMap = map[int]int{
 
 //goland:noinspection GoUnhandledErrorResult
 func main() {
+    gfaWrath, err := os.Open("data/GroupFinderActivity_Wrath.csv")
+	if err != nil {
+		panic(err)
+	}
+	defer gfaWrath.Close()
+	activitiesWrath := parseGroupFinderActivityWrath(gfaWrath)
+
+	actWrath, err := os.Create("data/Activity_Wrath.lua")
+    if err != nil {
+        panic(err)
+    }
+    defer actWrath.Close()
+
+    fmt.Fprint(actWrath, "C.ACTIVITY = {\n")
+    for _, activity := range activitiesWrath {
+        if difficultyMap[activity.DifficultyID] == 0 {
+            continue
+        }
+        fmt.Fprintf(actWrath, "    [%4d] = { difficulty = %d, category = %3d, mapID = %4d }, -- %s\n",
+            activity.ID,
+            difficultyMap[activity.DifficultyID],
+            activity.GroupFinderCategoryID,
+            activity.MapID,
+            activity.FullName_lang,
+        )
+    }
+    fmt.Fprint(actWrath, "}\n")
+
+
 	gfa, err := os.Open("data/GroupFinderActivity.csv")
 	if err != nil {
 		panic(err)
