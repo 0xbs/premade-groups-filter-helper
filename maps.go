@@ -18,7 +18,12 @@ var difficultyMap = map[int]int{
 	23:  3, // DungeonMythic
 	24:  0, // DungeonTimewalker
 	33:  0, // RaidTimewalker
+	148: 1, // Raid20 (Ruins of Ahn'Qiraj and Zul'Gurub)
 	167: 0, // Torghast
+	175: 1, // Ulduar10Normal
+	176: 1, // Ulduar25Normal
+	193: 2, // Ulduar10Heroic
+	194: 2, // Ulduar25Heroic
 }
 
 // contains split dungeons that have the same mapID
