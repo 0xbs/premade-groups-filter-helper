@@ -9,6 +9,7 @@ import (
 //goland:noinspection GoUnhandledErrorResult
 func main() {
 	writeWrath()
+	writeCata()
 
 	gfa, err := os.Open("data/GroupFinderActivity.csv")
 	if err != nil {
@@ -73,14 +74,22 @@ func main() {
 }
 
 func writeWrath() {
-	gfaWrath, err := os.Open("data/GroupFinderActivity_Wrath.csv")
+	writeLegacy("data/GroupFinderActivity_Wrath.csv", "data/Activity_Wrath.lua")
+}
+
+func writeCata() {
+	writeLegacy("data/GroupFinderActivity_Cata.csv", "data/Activity_Cata.lua")
+}
+
+func writeLegacy(source, target string) {
+	gfaWrath, err := os.Open(source)
 	if err != nil {
 		panic(err)
 	}
 	defer gfaWrath.Close()
 	activitiesWrath := parseGroupFinderActivityWrath(gfaWrath)
 
-	actWrath, err := os.Create("data/Activity_Wrath.lua")
+	actWrath, err := os.Create(target)
 	if err != nil {
 		panic(err)
 	}
