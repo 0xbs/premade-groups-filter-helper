@@ -8,7 +8,10 @@ C.ACTIVITY_TO_MAP_ID = {
     [1251] = 2549, -- Amirdrassil (Normal)
     [1252] = 2549, -- Amirdrassil (Heroic)
     [1253] = 2549, -- Amirdrassil (Mythic)
-    [1332] = 1136, -- Siege of Orgrimmar (Normal)
-    [1331] = 1136, -- Siege of Orgrimmar (Heroic)
     [1330] = 1136, -- Siege of Orgrimmar (Mythic)
+    [1331] = 1136, -- Siege of Orgrimmar (Heroic)
+    [1332] = 1136, -- Siege of Orgrimmar (Normal)
+    [1504] = 2657, -- Nerub-ar Palace (Mythic)
+    [1505] = 2657, -- Nerub-ar Palace (Normal)
+    [1506] = 2657, -- Nerub-ar Palace (Heroic)
 }
