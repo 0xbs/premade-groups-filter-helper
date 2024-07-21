@@ -532,3 +532,6 @@ C.ACTIVITY = {
     [1521] = { difficulty = 2, category = 2, mapID = 2652, cmID =   0 }, -- The Stonevault (Heroic)
     [1535] = { difficulty = 1, category = 2, mapID = 2652, cmID =   0 }, -- The Stonevault (Normal)
 }
+
+-- Return a default set if activity not found
+setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0, cmID = 0 } end })

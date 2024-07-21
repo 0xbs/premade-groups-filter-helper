@@ -69,7 +69,9 @@ func main() {
 			activity.FullName_lang,
 		)
 	}
-	fmt.Fprint(act, "}\n")
+	fmt.Fprint(act, "}\n\n")
+    fmt.Fprint(act, "-- Return a default set if activity not found\n")
+    fmt.Fprint(act, "setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0, cmID = 0 } end })\n")
 }
 
 func writeWrath() {
@@ -103,7 +105,9 @@ func writeLegacy(source, target string) {
 			activity.FullName_lang,
 		)
 	}
-	fmt.Fprint(actWrath, "}\n")
+	fmt.Fprint(actWrath, "}\n\n")
+	fmt.Fprint(actWrath, "-- Return a default set if activity not found\n")
+	fmt.Fprint(actWrath, "setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0, cmID = 0 } end })\n")
 }
 
 func writeRaids(activities []GroupFinderActivity) {

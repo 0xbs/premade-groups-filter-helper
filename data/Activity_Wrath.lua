@@ -203,3 +203,6 @@ C.ACTIVITY = {
     [1533] = { difficulty = 2, category = 114, mapID =  754 }, -- Throne of the Four Winds (10 Heroicl)
     [1534] = { difficulty = 2, category = 114, mapID =  754 }, -- Throne of the Four Winds (25 Heroic)
 }
+
+-- Return a default set if activity not found
+setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0, cmID = 0 } end })
