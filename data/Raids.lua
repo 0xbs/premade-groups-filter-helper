@@ -14,4 +14,9 @@ C.ACTIVITY_TO_MAP_ID = {
     [1504] = 2657, -- Nerub-ar Palace (Mythic)
     [1505] = 2657, -- Nerub-ar Palace (Normal)
     [1506] = 2657, -- Nerub-ar Palace (Heroic)
+    [1551] = 2792, -- Blackrock Depths (Normal)
+    [1552] = 2792, -- Blackrock Depths (Heroic)
+    [1600] = 2769, -- Liberation of Undermine (Heroic)
+    [1601] = 2769, -- Liberation of Undermine (Normal)
+    [1602] = 2769, -- Liberation of Undermine (Mythic)
 }
