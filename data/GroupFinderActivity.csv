@@ -451,7 +451,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 507,"The Underrot (Mythic Keystone)",Mythic+,2,4,138,194,385,98003,1841,8,0,5,1,0,0,0,0,0,0
 508,"The Underrot (Heroic)",Heroic,2,2,138,99,60,0,1841,2,0,5,1,0,0,0,0,0,0
 509,"THE MOTHERLODE (Normal)",Normal,2,1,140,99,0,63909,1594,1,0,5,1,0,0,0,0,0,0
-510,"THE MOTHERLODE (Mythic Keystone)",Mythic+,2,4,140,194,330,98010,1594,8,0,5,1,0,0,0,0,0,0
+510,"THE MOTHERLODE (Mythic Keystone)",Mythic+,2,4,140,194,330,98010,1594,8,0,5,1,0,0,0,0,0,247
 511,"THE MOTHERLODE (Heroic)",Heroic,2,2,140,99,60,129384,1594,2,0,5,1,0,0,0,0,0,0
 512,"Kings' Rest (Normal)",Normal,2,1,141,99,0,21439,1762,1,0,5,1,0,0,0,0,0,0
 513,"Kings' Rest (Mythic)",Mythic,2,3,141,99,60,65320,1762,23,0,5,1,0,0,0,0,0,0
@@ -487,7 +487,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 543,"Atal'Dazar (Normal)",Normal,2,1,137,99,57,0,1763,1,0,5,1,0,0,0,0,1224,0
 644,"The Underrot (Mythic)",Mythic,2,3,138,99,60,98003,1841,23,0,5,1,0,0,0,0,0,0
 645,"Temple of Sethraliss (Mythic)",Mythic,2,3,139,195,60,0,1877,23,0,5,1,0,0,0,0,0,0
-646,"THE MOTHERLODE (Mythic)",Mythic,2,3,140,67,330,83604,1594,8,0,5,1,0,0,0,0,0,0
+646,"THE MOTHERLODE (Mythic)",Mythic,2,3,140,67,330,83604,1594,23,0,5,1,0,0,0,0,0,0
 647,"Tiragarde Sound","Tiragarde Sound",1,0,247,258,0,0,0,0,8567,0,4,0,0,0,0,0,0
 648,Drustvar,Drustvar,1,0,247,258,0,0,0,0,8721,0,4,0,0,0,0,0,0
 649,"Stormsong Valley","Stormsong Valley",1,0,247,258,0,0,0,0,9042,0,4,0,0,0,0,0,0
@@ -981,28 +981,19 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1561,"Excavation Site 9 (Tier 9)","Tier 9",121,1,373,162,0,121447,2815,208,15836,5,4,0,0,0,0,0,0
 1562,"Excavation Site 9 (Tier 10)","Tier 10",121,1,373,162,0,121448,2815,208,15836,5,4,0,0,0,0,0,0
 1563,"Excavation Site 9 (Tier 11)","Tier 11",121,1,373,162,0,121468,2815,208,15836,5,4,0,0,0,0,0,0
-1564,"[PH] Undermine Delve (Tier 1)","Tier 1",121,1,374,162,0,118387,2826,208,15990,5,4,0,0,0,0,0,0
-1565,"[PH] Undermine Delve (Tier 2)","Tier 2",121,1,374,162,0,121491,2826,208,15990,5,4,0,0,0,0,0,0
-1566,"[PH] Undermine Delve (Tier 3)","Tier 3",121,1,374,162,0,118382,2826,208,15990,5,4,0,0,0,0,0,0
-1567,"[PH] Undermine Delve (Tier 4)","Tier 4",121,1,374,162,0,118383,2826,208,15990,5,4,0,0,0,0,0,0
-1568,"[PH] Undermine Delve (Tier 5)","Tier 5",121,1,374,162,0,118384,2826,208,15990,5,4,0,0,0,0,0,0
-1569,"[PH] Undermine Delve (Tier 6)","Tier 6",121,1,374,162,0,118385,2826,208,15990,5,4,0,0,0,0,0,0
-1570,"[PH] Undermine Delve (Tier 7)","Tier 7",121,1,374,162,0,118386,2826,208,15990,5,4,0,0,0,0,0,0
-1571,"[PH] Undermine Delve (Tier 8)","Tier 8",121,1,374,162,0,121446,2826,208,15990,5,4,0,0,0,0,0,0
-1572,"[PH] Undermine Delve (Tier 9)","Tier 9",121,1,374,162,0,121447,2826,208,15990,5,4,0,0,0,0,0,0
-1573,"[PH] Undermine Delve (Tier 10)","Tier 10",121,1,374,162,0,121448,2826,208,15990,5,4,0,0,0,0,0,0
-1574,"[PH] Undermine Delve (Tier 11)","Tier 11",121,1,374,162,0,121468,2826,208,15990,5,4,0,0,0,0,0,0
-1575,"[PH] Delve Goblin Boss (Tier 1)","Tier 1",121,1,375,162,0,118387,2831,208,15991,5,4,0,0,0,0,0,0
-1576,"[PH] Delve Goblin Boss (Tier 2)","Tier 2",121,1,375,162,0,121491,2831,208,15991,5,4,0,0,0,0,0,0
-1577,"[PH] Delve Goblin Boss (Tier 3)","Tier 3",121,1,375,162,0,118382,2831,208,15991,5,4,0,0,0,0,0,0
-1578,"[PH] Delve Goblin Boss (Tier 4)","Tier 4",121,1,375,162,0,118383,2831,208,15991,5,4,0,0,0,0,0,0
-1579,"[PH] Delve Goblin Boss (Tier 5)","Tier 5",121,1,375,162,0,118384,2831,208,15991,5,4,0,0,0,0,0,0
-1580,"[PH] Delve Goblin Boss (Tier 6)","Tier 6",121,1,375,162,0,118385,2831,208,15991,5,4,0,0,0,0,0,0
-1581,"[PH] Delve Goblin Boss (Tier 7)","Tier 7",121,1,375,162,0,118386,2831,208,15991,5,4,0,0,0,0,0,0
-1582,"[PH] Delve Goblin Boss (Tier 8)","Tier 8",121,1,375,162,0,121446,2831,208,15991,5,4,0,0,0,0,0,0
-1583,"[PH] Delve Goblin Boss (Tier 9)","Tier 9",121,1,375,162,0,121447,2831,208,15991,5,4,0,0,0,0,0,0
-1584,"[PH] Delve Goblin Boss (Tier 10)","Tier 10",121,1,375,162,0,121448,2831,208,15991,5,4,0,0,0,0,0,0
-1585,"[PH] Delve Goblin Boss (Tier 11)","Tier 11",121,1,375,162,0,121468,2831,208,15991,5,4,0,0,0,0,0,0
+1564,"Sidestreet Sluice (Tier 1)","Tier 1",121,1,374,162,0,118387,2826,208,15990,5,4,0,0,0,0,0,0
+1565,"Sidestreet Sluice (Tier 2)","Tier 2",121,1,374,162,0,121491,2826,208,15990,5,4,0,0,0,0,0,0
+1566,"Sidestreet Sluice (Tier 3)","Tier 3",121,1,374,162,0,118382,2826,208,15990,5,4,0,0,0,0,0,0
+1567,"Sidestreet Sluice (Tier 4)","Tier 4",121,1,374,162,0,118383,2826,208,15990,5,4,0,0,0,0,0,0
+1568,"Sidestreet Sluice (Tier 5)","Tier 5",121,1,374,162,0,118384,2826,208,15990,5,4,0,0,0,0,0,0
+1569,"Sidestreet Sluice (Tier 6)","Tier 6",121,1,374,162,0,118385,2826,208,15990,5,4,0,0,0,0,0,0
+1570,"Sidestreet Sluice (Tier 7)","Tier 7",121,1,374,162,0,118386,2826,208,15990,5,4,0,0,0,0,0,0
+1571,"Sidestreet Sluice (Tier 8)","Tier 8",121,1,374,162,0,121446,2826,208,15990,5,4,0,0,0,0,0,0
+1572,"Sidestreet Sluice (Tier 9)","Tier 9",121,1,374,162,0,121447,2826,208,15990,5,4,0,0,0,0,0,0
+1573,"Sidestreet Sluice (Tier 10)","Tier 10",121,1,374,162,0,121448,2826,208,15990,5,4,0,0,0,0,0,0
+1574,"Sidestreet Sluice (Tier 10)","Tier 11",121,1,374,162,0,121468,2826,208,15990,5,4,0,0,0,0,0,0
+1582,"Underpin's Demolition Competition (Tier ?)","Tier ?",121,1,375,162,0,121446,2831,208,15991,5,4,0,0,0,0,0,0
+1585,"Underpin's Demolition Competition (Tier ??)","Tier ??",121,1,375,162,0,121468,2831,208,15991,5,4,0,0,0,0,0,0
 1599,Undermine,Undermine,1,0,363,258,0,0,0,0,15347,0,4,0,0,0,0,0,0
 1600,"Liberation of Undermine (Heroic)",Heroic,3,2,377,35,631,132537,2769,15,0,30,0,0,0,0,0,0,0
 1601,"Liberation of Undermine (Normal)",Normal,3,1,377,35,602,132537,2769,14,0,30,0,0,0,0,0,0,0
