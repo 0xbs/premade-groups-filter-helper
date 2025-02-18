@@ -117,7 +117,7 @@ func writeLegacy(source, target string) {
 	fmt.Fprint(actWrath, strings.Join(fmtActivities, ""))
 	fmt.Fprint(actWrath, "}\n\n")
 	fmt.Fprint(actWrath, "-- Return a default set if activity not found\n")
-	fmt.Fprint(actWrath, "setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0, cmID = 0 } end })\n")
+	fmt.Fprint(actWrath, "setmetatable(C.ACTIVITY, { __index = function() return { difficulty = 0, category = 0, mapID = 0 } end })\n")
 }
 
 func writeRaids(activities []GroupFinderActivity) {
