@@ -81,7 +81,7 @@ func main() {
 }
 
 func writeWrath() {
-	writeLegacy("data/GroupFinderActivity_Wrath.csv", "data/Activity_Wrath.lua")
+	writeLegacy("data/GroupFinderActivity_Mists.csv", "data/Activity_Wrath.lua")
 }
 
 func writeLegacy(source, target string) {

@@ -19,4 +19,7 @@ C.ACTIVITY_TO_MAP_ID = {
     [1600] = 2769, -- Liberation of Undermine (Heroic)
     [1601] = 2769, -- Liberation of Undermine (Normal)
     [1602] = 2769, -- Liberation of Undermine (Mythic)
+    [1617] = 2810, -- Manaforge Omega (Normal)
+    [1618] = 2810, -- Manaforge Omega (Heroic)
+    [1619] = 2810, -- Manaforge Omega (Mythic)
 }
