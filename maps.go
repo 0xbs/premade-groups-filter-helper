@@ -11,6 +11,8 @@ var difficultyMap = map[int]int{
 	7:   0, // RaidLFR
 	8:   4, // DungeonChallenge
 	9:   1, // Raid40
+	11:  0, // ScenarioHeroic
+	12:  0, // ScenarioNormal
 	14:  1, // PrimaryRaidNormal
 	15:  2, // PrimaryRaidHeroic
 	16:  3, // PrimaryRaidMythic
@@ -18,15 +20,21 @@ var difficultyMap = map[int]int{
 	23:  3, // DungeonMythic
 	24:  0, // DungeonTimewalker
 	33:  0, // RaidTimewalker
+	38:  0, // RandomIslandNormal
+	39:  0, // RandomIslandHeroic
+	40:  0, // RandomIslandMythic
+	45:  0, // RandomIslandPvP
 	148: 1, // Raid20 (Ruins of Ahn'Qiraj and Zul'Gurub)
 	167: 0, // Torghast
 	175: 1, // Ulduar10Normal
 	176: 1, // Ulduar25Normal
 	193: 2, // Ulduar10Heroic
 	194: 2, // Ulduar25Heroic
+	208: 0, // Delve
+	237: 0, // DungeonCelestial
 }
 
-// contains split dungeons that have the same mapID
+// contains split dungeons that have the same mapID (maps from activityID to cmID)
 var fixedChallengeModeIDs = map[int]int{
 	471:  227, // Return to Karazhan: Lower
 	473:  234, // Return to Karazhan: Upper
@@ -36,5 +44,10 @@ var fixedChallengeModeIDs = map[int]int{
 	1017: 392, // Tazavesh: So'leah's Gambit
 	1247: 463, // Dawn of the Infinite: Galakrond's Fall
 	1248: 464, // Dawn of the Infinite: Murozond's Rise
-	1250: 463, // Galakrond's Fall (Mythic Keystone) // no idea why Fall exists twice
+}
+
+// helper map to add missing mapIDs for known dungeons
+var activity2MapID = map[int]int{
+	746:  2441, // Tazavesh, the Veiled Market (Mythic)
+	1711: 2441, // Tazavesh, the Veiled Market (Heroic)
 }

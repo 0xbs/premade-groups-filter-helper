@@ -47,3 +47,9 @@ type MapChallengeMode struct {
 	Flags          int
 	ExpansionLevel int
 }
+
+type MythicPlusSeasonTrackedMap struct {
+	ID                 int
+	MapChallengeModeID int
+	DisplaySeasonID    int
+}
