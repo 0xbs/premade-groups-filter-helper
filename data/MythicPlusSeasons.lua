@@ -1,5 +1,30 @@
 local CMID_MAP = {
 
+    -- Season #34
+    [560] = { order = 1, activityGroupID = 400, keyword = "" }, -- Maisara Caverns (Mythic Keystone)
+    [559] = { order = 2, activityGroupID = 401, keyword = "" }, -- Nexus-Point Xenas (Mythic Keystone)
+    [558] = { order = 3, activityGroupID = 399, keyword = "" }, -- Magisters' Terrace (Mythic Keystone)
+    [557] = { order = 4, activityGroupID = 370, keyword = "" }, -- Windrunner Spire (Mythic Keystone)
+    [556] = { order = 5, activityGroupID =  52, keyword = "" }, -- Pit of Saron (Mythic Keystone)
+    [402] = { order = 6, activityGroupID = 302, keyword = "" }, -- Algeth'ar Academy (Mythic Keystone)
+    [239] = { order = 7, activityGroupID = 133, keyword = "" }, -- Seat of the Triumvirate (Mythic Keystone)
+    [161] = { order = 8, activityGroupID =   9, keyword = "" }, -- Skyreach (Mythic Keystone)
+
+    -- Season #31
+    [239] = { order = 1, activityGroupID = 133, keyword = "" }, -- Seat of the Triumvirate (Mythic Keystone)
+    [234] = { order = 2, activityGroupID = 127, keyword = "" }, -- Lower Karazhan (Mythic Keystone)
+    [233] = { order = 3, activityGroupID = 129, keyword = "" }, -- Cathedral of Eternal Night (Mythic Keystone)
+    [227] = { order = 4, activityGroupID = 127, keyword = "" }, -- Lower Karazhan (Mythic Keystone)
+    [210] = { order = 5, activityGroupID = 120, keyword = "" }, -- Court of Stars (Mythic Keystone)
+    [209] = { order = 6, activityGroupID = 121, keyword = "" }, -- The Arcway (Mythic Keystone)
+    [208] = { order = 7, activityGroupID = 119, keyword = "" }, -- Maw of Souls (Mythic Keystone)
+    [207] = { order = 8, activityGroupID = 117, keyword = "" }, -- Vault of the Wardens (Mythic Keystone)
+    [206] = { order = 9, activityGroupID = 115, keyword = "" }, -- Neltharion's Lair (Mythic Keystone)
+    [200] = { order = 10, activityGroupID = 114, keyword = "" }, -- Halls of Valor (Mythic Keystone)
+    [199] = { order = 11, activityGroupID = 118, keyword = "" }, -- Black Rook Hold (Mythic Keystone)
+    [198] = { order = 12, activityGroupID = 113, keyword = "" }, -- Darkheart Thicket (Mythic Keystone)
+    [197] = { order = 13, activityGroupID = 112, keyword = "" }, -- Eye of Azshara (Mythic Keystone)
+
     -- Season #30
     [542] = { order = 1, activityGroupID = 381, keyword = "" }, -- Eco-Dome Al'dani (Mythic Keystone)
     [525] = { order = 2, activityGroupID = 371, keyword = "" }, -- Operation: Floodgate (Mythic Keystone)
@@ -75,7 +100,7 @@ local CMID_MAP = {
     [391] = { order = 2, activityGroupID = 280, keyword = "" }, -- Tazavesh Streets (Mythic Keystone)
     [370] = { order = 3, activityGroupID = 257, keyword = "" }, -- Mechagon Workshop (Mythic Keystone)
     [369] = { order = 4, activityGroupID = 256, keyword = "" }, -- Mechagon Junkyard (Mythic Keystone)
-    [234] = { order = 5, activityGroupID = 128, keyword = "" }, -- Upper Karazhan (Mythic Keystone)
+    [234] = { order = 5, activityGroupID = 127, keyword = "" }, -- Lower Karazhan (Mythic Keystone)
     [227] = { order = 6, activityGroupID = 127, keyword = "" }, -- Lower Karazhan (Mythic Keystone)
     [169] = { order = 7, activityGroupID =   7, keyword = "" }, -- Iron Docks (Mythic Keystone)
     [166] = { order = 8, activityGroupID =  10, keyword = "" }, -- Grimrail Depot (Mythic Keystone)

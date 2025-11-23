@@ -12,7 +12,7 @@ import (
 
 const (
 	runDownload   = true
-	classicBuild  = "5.5.0.62422"
+	classicBuild  = "5.5.3.64530"
 	classicSuffix = "_Mists"
 	headerPath    = "data/Header.lua"
 )
