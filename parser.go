@@ -34,12 +34,13 @@ func parseGroupFinderActivity(source io.Reader) []GroupFinderActivity {
 			PlayerConditionID:        atoi(record[8]),
 			MapID:                    atoi(record[9]),
 			DifficultyID:             atoi(record[10]),
-			AreaID:                   atoi(record[11]),
-			MaxPlayers:               atoi(record[12]), // 0-40
-			DisplayType:              atoi(record[13]), // 0 (Role Counts), 1 (Role Enumeration), 2 (Class Enumeration), 4 (Player Count)
+			ExpansionID:              atoi(record[11]),
+			AreaID:                   atoi(record[12]),
+			MaxPlayers:               atoi(record[13]), // 0-40
+			DisplayType:              atoi(record[14]), // 0 (Role Counts), 1 (Role Enumeration), 2 (Class Enumeration), 4 (Player Count)
 			// unknown fields inbetween
-			OverrideContentTuningID: atoi(record[18]), // only set for Atal'Dazar
-			MapChallengeModeID:      atoi(record[19]), // only set for a few dungeons
+			OverrideContentTuningID: atoi(record[19]), // only set for Atal'Dazar
+			MapChallengeModeID:      atoi(record[20]), // only set for a few dungeons
 		}
 
 		entries = append(entries, entry)
@@ -64,11 +65,12 @@ func parseMapChallengeMode(source io.Reader) []MapChallengeMode {
 		}
 
 		entry := MapChallengeMode{
-			Name_lang:      record[0],
-			ID:             atoi(record[1]),
-			MapID:          atoi(record[2]),
-			Flags:          atoi(record[3]),
-			ExpansionLevel: atoi(record[4]),
+			Name_lang:              record[0],
+			ID:                     atoi(record[1]),
+			MapID:                  atoi(record[2]),
+			Flags:                  atoi(record[3]),
+			Field_12_0_0_63854_004: atoi(record[4]),
+			ExpansionLevel:         atoi(record[5]),
 			// unknown fields following
 		}
 
