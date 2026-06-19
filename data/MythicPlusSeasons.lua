@@ -1,5 +1,15 @@
 local CMID_MAP = {
 
+    -- Season #37
+    [588] = { order = 1, activityGroupID = 420, keyword = "" }, -- Altar of Fangs (Mythic Keystone)
+    [587] = { order = 2, activityGroupID = 396, keyword = "" }, -- Murder Row (Mythic Keystone)
+    [586] = { order = 3, activityGroupID = 392, keyword = "" }, -- Den of Nalorakk (Mythic Keystone)
+    [585] = { order = 4, activityGroupID = 398, keyword = "" }, -- Voidscar Arena (Mythic Keystone)
+    [584] = { order = 5, activityGroupID = 382, keyword = "" }, -- The Blinding Vale (Mythic Keystone)
+    [399] = { order = 6, activityGroupID = 306, keyword = "" }, -- Ruby Life Pools (Mythic Keystone)
+    [250] = { order = 7, activityGroupID = 139, keyword = "" }, -- Temple of Sethraliss (Mythic Keystone)
+    [249] = { order = 8, activityGroupID = 141, keyword = "" }, -- Kings' Rest (Mythic Keystone)
+
     -- Season #34
     [560] = { order = 1, activityGroupID = 400, keyword = "" }, -- Maisara Caverns (Mythic Keystone)
     [559] = { order = 2, activityGroupID = 401, keyword = "" }, -- Nexus-Point Xenas (Mythic Keystone)
