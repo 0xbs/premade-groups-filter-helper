@@ -31,6 +31,7 @@ var difficultyMap = map[int]int{
 	193: 2, // Ulduar10Heroic
 	194: 2, // Ulduar25Heroic
 	208: 0, // Delve
+	233: 3, // MythicFlexibleRaiding
 	237: 0, // DungeonCelestial
 }
 
