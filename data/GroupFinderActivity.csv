@@ -447,7 +447,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 502,"Atal'Dazar (Mythic Keystone)",Mythic+,2,4,137,194,48,98001,1763,8,0,7,5,1,0,0,0,0,0,0
 503,"Temple of Sethraliss (Normal)",Normal,2,1,139,99,0,153864,1877,1,0,7,5,1,0,0,0,0,0,0
 504,"Temple of Sethraliss (Mythic Keystone)",Mythic+,2,4,139,227,0,98004,1877,8,0,7,5,1,0,0,0,0,0,0
-505,"Temple of Sethraliss (Heroic)",Heroic,2,2,139,99,0,153867,1877,2,0,7,5,1,0,0,0,0,0,0
+505,"Temple of Sethraliss (Heroic)",Heroic,2,2,139,99,256,153867,1877,2,0,7,5,1,0,0,0,0,0,0
 506,"The Underrot (Normal)",Normal,2,1,138,99,0,63909,1841,1,0,7,5,1,0,0,0,0,0,0
 507,"The Underrot (Mythic Keystone)",Mythic+,2,4,138,194,72,98003,1841,8,0,7,5,1,0,0,0,0,0,0
 508,"The Underrot (Heroic)",Heroic,2,2,138,99,19,0,1841,2,0,7,5,1,0,0,0,0,0,0
@@ -457,7 +457,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 512,"Kings' Rest (Normal)",Normal,2,1,141,99,0,21439,1762,1,0,7,5,1,0,0,0,0,0,0
 513,"Kings' Rest (Mythic)",Mythic,2,3,141,99,0,153900,1762,23,0,7,5,1,0,0,0,0,0,0
 514,"Kings' Rest (Mythic Keystone)",Mythic+,2,4,141,227,0,98009,1762,8,0,7,5,1,0,0,0,0,0,0
-515,"Kings' Rest (Heroic)",Heroic,2,1,141,99,0,153898,1762,2,0,7,5,1,0,0,0,0,0,0
+515,"Kings' Rest (Heroic)",Heroic,2,1,141,99,256,153898,1762,2,0,7,5,1,0,0,0,0,0,0
 516,"Freehold (Normal)",Normal,2,1,142,99,0,63909,1754,1,0,7,5,1,0,0,0,0,0,0
 517,"Freehold (Mythic)",Mythic,2,3,142,99,0,0,1754,23,0,7,5,1,0,0,0,0,0,0
 518,"Freehold (Mythic Keystone)",Mythic+,2,5,142,194,72,98002,1754,8,0,7,5,1,0,0,0,0,0,0
@@ -723,7 +723,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1171,"Neltharus (Mythic)",Mythic,2,3,305,99,76,99866,2519,23,0,9,5,1,0,0,0,0,0,0
 1172,"Neltharus (Mythic Keystone)",Mythic+,2,3,305,194,76,99869,2519,8,0,9,5,1,0,0,0,0,0,0
 1173,"Ruby Life Pools (Normal)",Normal,2,1,306,99,0,96920,2521,1,0,9,5,1,0,0,0,0,0,0
-1174,"Ruby Life Pools (Heroic)",Heroic,2,2,306,99,0,96922,2521,2,0,9,5,1,0,0,0,0,0,0
+1174,"Ruby Life Pools (Heroic)",Heroic,2,2,306,99,256,96922,2521,2,0,9,5,1,0,0,0,0,0,0
 1175,"Ruby Life Pools (Mythic)",Mythic,2,3,306,99,0,153892,2521,23,0,9,5,1,0,0,0,0,0,0
 1176,"Ruby Life Pools (Mythic Keystone)",Mythic+,2,4,306,227,0,99868,2521,8,0,9,5,1,0,0,0,0,0,0
 1177,"The Azure Vault (Normal)",Normal,2,1,307,99,0,99866,2515,1,0,9,5,1,0,0,0,0,0,0
@@ -1071,8 +1071,8 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1694,"Eco-Dome Al'dani (Mythic Keystone)",Mythic+,2,4,381,227,105,137318,2830,8,0,10,5,1,0,0,0,0,0,0
 1695,"Bloodmaul Slag Mines (Mythic Keystone)",Mythic+,2,1,6,227,68,98027,1175,8,0,5,5,1,0,0,0,0,0,0
 1699,"The Blinding Vale (Normal)",Normal,2,1,382,99,100,137176,2859,1,0,11,5,1,0,0,0,0,0,0
-1700,"The Blinding Vale (Heroic)",Heroic,2,2,382,99,211,137177,2859,2,0,11,5,1,0,0,0,0,0,0
-1701,"The Blinding Vale (Mythic)",Mythic,2,3,382,99,233,137178,2859,23,0,11,5,1,0,0,0,0,0,0
+1700,"The Blinding Vale (Heroic)",Heroic,2,2,382,99,256,137177,2859,2,0,11,5,1,0,0,0,0,0,0
+1701,"The Blinding Vale (Mythic)",Mythic,2,3,382,99,279,137178,2859,23,0,11,5,1,0,0,0,0,0,0
 1702,"The Stonecore (Mythic Keystone)",Mythic+,2,8,58,227,68,137578,725,8,0,3,5,1,0,0,0,0,0,0
 1707,"Eco-Dome Al'dani (Normal)",Normal,2,1,381,99,0,132403,2830,1,0,10,5,1,0,0,0,0,0,0
 1708,"Eco-Dome Al'dani (Heroic)",Heroic,2,2,381,99,101,132405,2830,2,0,10,5,1,0,0,0,0,0,0
@@ -1080,8 +1080,8 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1711,"Tazavesh, the Veiled Market (Heroic)",Heroic,2,1,272,99,0,5793,0,2,0,8,5,1,0,0,0,0,0,0
 1712,K'aresh,K'aresh,1,0,363,258,0,0,0,0,15336,10,0,4,0,0,0,0,0,0
 1721,"Den of Nalorakk (Normal)",Normal,2,1,392,99,100,137589,2825,1,0,11,5,1,0,0,0,0,0,0
-1722,"Den of Nalorakk (Heroic)",Heroic,2,2,392,99,211,137600,2825,2,0,11,5,1,0,0,0,0,0,0
-1723,"Den of Nalorakk (Mythic)",Mythic,2,3,392,99,233,137604,2825,23,0,11,5,1,0,0,0,0,0,0
+1722,"Den of Nalorakk (Heroic)",Heroic,2,2,392,99,256,137600,2825,2,0,11,5,1,0,0,0,0,0,0
+1723,"Den of Nalorakk (Mythic)",Mythic,2,3,392,99,279,137604,2825,23,0,11,5,1,0,0,0,0,0,0
 1735,"World Bosses (Midnight)","World Bosses",3,98,0,803,0,143837,0,0,0,11,40,0,0,0,0,0,0,0
 1736,"Archival Assault (Tier 11)","Tier 11",121,11,394,162,0,121468,2803,208,16427,10,5,4,0,0,0,0,0,0
 1737,"Archival Assault (Tier 10)","Tier 10",121,10,394,162,0,121448,2803,208,16427,10,5,4,0,0,0,0,0,0
@@ -1097,12 +1097,12 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1747,"Voidrazor Sanctuary (Tier ?)","Tier ?",121,1,395,162,0,121446,2951,208,16539,10,5,4,0,0,0,0,0,0
 1748,"Voidrazor Sanctuary (Tier ??)","Tier ??",121,1,395,162,0,121468,2951,208,16539,10,5,4,0,0,0,0,0,0
 1749,"Murder Row (Normal)",Normal,2,1,396,99,100,131843,2813,1,0,11,5,1,0,0,0,0,0,0
-1750,"Murder Row (Heroic)",Heroic,2,2,396,99,211,131844,2813,2,0,11,5,1,0,0,0,0,0,0
-1751,"Murder Row (Mythic)",Mythic,2,3,396,99,233,131845,2813,23,0,11,5,1,0,0,0,0,0,0
+1750,"Murder Row (Heroic)",Heroic,2,2,396,99,256,131844,2813,2,0,11,5,1,0,0,0,0,0,0
+1751,"Murder Row (Mythic)",Mythic,2,3,396,99,279,131845,2813,23,0,11,5,1,0,0,0,0,0,0
 1753,Harandar,Harandar,1,0,397,258,0,0,2694,0,15355,11,0,4,0,0,0,0,0,0
 1754,"Voidscar Arena (Normal)",Normal,2,1,398,99,100,139432,2923,1,0,11,5,1,0,0,0,0,0,0
-1755,"Voidscar Arena (Heroic)",Heroic,2,2,398,99,211,139436,2923,2,0,11,5,1,0,0,0,0,0,0
-1756,"Voidscar Arena (Mythic)",Mythic,2,3,398,99,233,139442,2923,23,0,11,5,1,0,0,0,0,0,0
+1755,"Voidscar Arena (Heroic)",Heroic,2,2,398,99,256,139436,2923,2,0,11,5,1,0,0,0,0,0,0
+1756,"Voidscar Arena (Mythic)",Mythic,2,3,398,99,279,139442,2923,23,0,11,5,1,0,0,0,0,0,0
 1757,"Magisters' Terrace (Normal)",Normal,2,1,399,99,100,145197,2811,1,0,11,5,1,0,0,0,0,0,0
 1758,"Magisters' Terrace (Heroic)",Heroic,2,2,399,99,211,145203,2811,2,0,11,5,1,0,0,0,0,0,0
 1759,"Magisters' Terrace (Mythic)",Mythic,2,3,399,99,233,145431,2811,23,0,11,5,1,0,0,0,0,0,0
@@ -1250,9 +1250,9 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1923,"The Darkway (Tier 10)","Tier 10",121,10,415,162,0,146872,3003,208,16642,11,5,4,0,0,0,0,0,0
 1924,"The Darkway (Tier 11)","Tier 11",121,11,415,162,0,146873,3003,208,16642,11,5,4,0,0,0,0,0,0
 1930,"Altar of Fangs (Normal)",Normal,2,1,420,99,100,151550,2993,1,0,11,5,1,0,0,0,0,0,0
-1931,"Altar of Fangs (Heroic)",Heroic,2,2,420,99,0,151631,2993,2,0,11,5,1,0,0,0,0,0,0
-1932,"Altar of Fangs (Mythic)",Mythic,2,3,420,99,0,151634,2993,23,0,11,5,1,0,0,0,0,0,0
-1933,"Altar of Fangs (Mythic Keystone)",Mythic+,2,4,420,227,0,153802,2993,8,0,11,5,1,0,0,0,0,0,0
+1931,"Altar of Fangs (Heroic)",Heroic,2,2,420,99,256,151631,2993,2,0,11,5,1,0,0,0,0,0,0
+1932,"Altar of Fangs (Mythic)",Mythic,2,3,420,99,279,151634,2993,23,0,11,5,1,0,0,0,0,0,0
+1933,"Altar of Fangs (Mythic Keystone)",Mythic+,2,4,420,227,279,153802,2993,8,0,11,5,1,0,0,0,0,0,0
 1936,"Stormarion Assault","Stormarion Assault",1,0,0,258,0,21439,2771,0,0,11,40,4,0,0,0,0,0,0
 1942,Voidstorm,Voidstorm,1,0,397,258,0,0,2771,0,16648,11,0,4,0,0,0,0,0,0
 1943,Eversong,Eversong,1,0,397,258,0,0,0,0,15968,11,0,4,0,0,0,0,0,0
@@ -1261,13 +1261,13 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 1946,"Sporefall (Normal)",Normal,3,1,422,35,259,0,1592,14,0,11,30,0,0,0,0,0,0,0
 1947,"Sporefall (Mythic)",Mythic,3,1,422,35,285,0,1592,233,0,11,25,0,0,0,0,0,0,0
 1948,"Sporefall (Heroic)",Heroic,3,1,422,35,272,0,1592,15,0,11,30,0,0,0,0,0,0,0
-1949,"The Blinding Vale (Mythic Keystone)",Mythic+,2,4,382,227,0,153803,2859,8,0,11,5,1,0,0,0,0,0,0
-1950,"Murder Row (Mythic Keystone)",Mythic+,2,4,396,227,0,153806,2813,8,0,11,5,1,0,0,0,0,0,0
-1951,"Voidscar Arena (Mythic Keystone)",Mythic+,2,4,398,227,0,153804,2923,8,0,11,5,1,0,0,0,0,0,0
-1952,"Den of Nalorakk (Mythic Keystone)",Mythic+,2,4,392,227,0,153805,2825,8,0,11,5,1,0,0,0,0,0,0
+1949,"The Blinding Vale (Mythic Keystone)",Mythic+,2,4,382,227,279,153803,2859,8,0,11,5,1,0,0,0,0,0,0
+1950,"Murder Row (Mythic Keystone)",Mythic+,2,4,396,227,279,153806,2813,8,0,11,5,1,0,0,0,0,0,0
+1951,"Voidscar Arena (Mythic Keystone)",Mythic+,2,4,398,227,279,153804,2923,8,0,11,5,1,0,0,0,0,0,0
+1952,"Den of Nalorakk (Mythic Keystone)",Mythic+,2,4,392,227,279,153805,2825,8,0,11,5,1,0,0,0,0,0,0
 1955,"The Venomous Abyss (Normal)",Normal,3,1,424,35,279,156885,3004,14,0,11,30,0,0,0,0,0,0,0
-1956,"The Venomous Abyss (Heroic)",Heroic,3,1,424,35,295,156885,3004,14,0,11,30,0,0,0,0,0,0,0
-1957,"The Venomous Abyss (Mythic)",Mythic,3,1,424,35,308,156885,3004,14,0,11,30,0,0,0,0,0,0,0
+1956,"The Venomous Abyss (Heroic)",Heroic,3,1,424,35,295,156885,3004,15,0,11,30,0,0,0,0,0,0,0
+1957,"The Venomous Abyss (Mythic)",Mythic,3,1,424,35,308,156885,3004,16,0,11,30,0,0,0,0,0,0,0
 1964,Val,Val,1,0,397,258,0,156379,3047,0,0,11,40,0,0,0,0,0,0,0
 1965,Naigtal,Naigtal,1,0,397,258,0,156379,3075,0,0,11,40,0,0,0,0,0,0,0
 1968,"World Bosses (Midnight) - Heroic","World Bosses - Heroic",3,99,0,803,0,143837,0,0,0,11,40,0,0,0,0,0,0,0
@@ -1302,6 +1302,7 @@ ID,FullName_lang,ShortName_lang,GroupFinderCategoryID,OrderIndex,GroupFinderActi
 2027,"The Ring of Glory (Tier 9)","Tier 9",121,9,432,162,0,156914,3077,208,16981,11,5,4,0,0,0,0,0,0
 2028,"The Ring of Glory (Tier 10)","Tier 10",121,10,432,162,0,156913,3077,208,16981,11,5,4,0,0,0,0,0,0
 2029,"The Ring of Glory (Tier 11)","Tier 11",121,11,432,162,0,156908,3077,208,16981,11,5,4,0,0,0,0,0,0
+2030,"Curse Surges","Curse Surges",1,0,397,258,0,160444,0,0,0,11,40,0,0,0,0,0,0,0
 1332,"Siege of Orgrimmar (Normal)",Normal,3,0,1,35,0,0,1136,14,0,4,30,0,0,0,0,0,0,0
 1331,"Siege of Orgrimmar (Heroic)",Heroic,3,0,1,35,0,0,1136,15,0,4,30,0,0,0,0,0,0,0
 1330,"Siege of Orgrimmar (Mythic)",Mythic,3,0,1,35,0,0,1136,16,0,4,20,0,0,0,0,0,0,0
