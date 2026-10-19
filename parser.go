@@ -3,44 +3,53 @@ package main
 import (
 	"0xbs/premade-groups-filter-helper/logger"
 	"encoding/csv"
+	"fmt"
 	"io"
 	"strconv"
 )
 
 func parseGroupFinderActivity(source io.Reader) []GroupFinderActivity {
-	csvReader := csv.NewReader(source)
-
-	records, err := csvReader.ReadAll()
-	if err != nil {
-		logger.Fatalf("failed to read CSV records: %v", err)
-	}
+	records := readCSV(source,
+		"ID",
+		"FullName_lang",
+		"ShortName_lang",
+		"GroupFinderCategoryID",
+		"OrderIndex",
+		"GroupFinderActivityGrpID",
+		"Flags",
+		"MinGearLevelSuggestion",
+		"PlayerConditionID",
+		"MapID",
+		"DifficultyID",
+		"ExpansionID",
+		"AreaID",
+		"MaxPlayers",
+		"DisplayType",
+		"OverrideContentTuningID",
+		"MapChallengeModeID",
+	)
 
 	var entries []GroupFinderActivity
 
-	for i, record := range records {
-		if i == 0 {
-			continue // ignore header
-		}
-
+	for _, record := range records {
 		entry := GroupFinderActivity{
-			ID:                       atoi(record[0]),
-			FullName_lang:            record[1],
-			ShortName_lang:           record[2],
-			GroupFinderCategoryID:    atoi(record[3]),
-			OrderIndex:               atoi(record[4]),
-			GroupFinderActivityGrpID: atoi(record[5]),
-			Flags:                    atoi(record[6]),
-			MinGearLevelSuggestion:   atoi(record[7]),
-			PlayerConditionID:        atoi(record[8]),
-			MapID:                    atoi(record[9]),
-			DifficultyID:             atoi(record[10]),
-			ExpansionID:              atoi(record[11]),
-			AreaID:                   atoi(record[12]),
-			MaxPlayers:               atoi(record[13]), // 0-40
-			DisplayType:              atoi(record[14]), // 0 (Role Counts), 1 (Role Enumeration), 2 (Class Enumeration), 4 (Player Count)
-			// unknown fields inbetween
-			OverrideContentTuningID: atoi(record[19]), // only set for Atal'Dazar
-			MapChallengeModeID:      atoi(record[20]), // only set for a few dungeons
+			ID:                       atoi(record["ID"]),
+			FullName_lang:            record["FullName_lang"],
+			ShortName_lang:           record["ShortName_lang"],
+			GroupFinderCategoryID:    atoi(record["GroupFinderCategoryID"]),
+			OrderIndex:               atoi(record["OrderIndex"]),
+			GroupFinderActivityGrpID: atoi(record["GroupFinderActivityGrpID"]),
+			Flags:                    atoi(record["Flags"]),
+			MinGearLevelSuggestion:   atoi(record["MinGearLevelSuggestion"]),
+			PlayerConditionID:        atoi(record["PlayerConditionID"]),
+			MapID:                    atoi(record["MapID"]),
+			DifficultyID:             atoi(record["DifficultyID"]),
+			ExpansionID:              atoi(record["ExpansionID"]),
+			AreaID:                   atoi(record["AreaID"]),
+			MaxPlayers:               atoi(record["MaxPlayers"]),              // 0-40
+			DisplayType:              atoi(record["DisplayType"]),             // 0 (Role Counts), 1 (Role Enumeration), 2 (Class Enumeration), 4 (Player Count)
+			OverrideContentTuningID:  atoi(record["OverrideContentTuningID"]), // only set for Atal'Dazar
+			MapChallengeModeID:       atoi(record["MapChallengeModeID"]),      // only set for a few dungeons
 		}
 
 		entries = append(entries, entry)
@@ -50,28 +59,25 @@ func parseGroupFinderActivity(source io.Reader) []GroupFinderActivity {
 }
 
 func parseMapChallengeMode(source io.Reader) []MapChallengeMode {
-	csvReader := csv.NewReader(source)
-
-	records, err := csvReader.ReadAll()
-	if err != nil {
-		logger.Fatalf("failed to read CSV records: %v", err)
-	}
+	records := readCSV(source,
+		"Name_lang",
+		"ID",
+		"MapID",
+		"Flags",
+		"Field_12_0_0_63854_004",
+		"ExpansionLevel",
+	)
 
 	var entries []MapChallengeMode
 
-	for i, record := range records {
-		if i == 0 {
-			continue // ignore header
-		}
-
+	for _, record := range records {
 		entry := MapChallengeMode{
-			Name_lang:              record[0],
-			ID:                     atoi(record[1]),
-			MapID:                  atoi(record[2]),
-			Flags:                  atoi(record[3]),
-			Field_12_0_0_63854_004: atoi(record[4]),
-			ExpansionLevel:         atoi(record[5]),
-			// unknown fields following
+			Name_lang:              record["Name_lang"],
+			ID:                     atoi(record["ID"]),
+			MapID:                  atoi(record["MapID"]),
+			Flags:                  atoi(record["Flags"]),
+			Field_12_0_0_63854_004: atoi(record["Field_12_0_0_63854_004"]),
+			ExpansionLevel:         atoi(record["ExpansionLevel"]),
 		}
 
 		entries = append(entries, entry)
@@ -81,30 +87,57 @@ func parseMapChallengeMode(source io.Reader) []MapChallengeMode {
 }
 
 func parseMythicPlusSeasonTrackedMap(source io.Reader) []MythicPlusSeasonTrackedMap {
-	csvReader := csv.NewReader(source)
-
-	records, err := csvReader.ReadAll()
-	if err != nil {
-		logger.Fatalf("failed to read CSV records: %v", err)
-	}
+	records := readCSV(source,
+		"ID",
+		"MapChallengeModeID",
+		"DisplaySeasonID",
+	)
 
 	var entries []MythicPlusSeasonTrackedMap
 
-	for i, record := range records {
-		if i == 0 {
-			continue // ignore header
-		}
-
+	for _, record := range records {
 		entry := MythicPlusSeasonTrackedMap{
-			ID:                 atoi(record[0]),
-			MapChallengeModeID: atoi(record[1]),
-			DisplaySeasonID:    atoi(record[2]),
+			ID:                 atoi(record["ID"]),
+			MapChallengeModeID: atoi(record["MapChallengeModeID"]),
+			DisplaySeasonID:    atoi(record["DisplaySeasonID"]),
 		}
 
 		entries = append(entries, entry)
 	}
 
 	return entries
+}
+
+// readCSV resolves fields by name because column order differs between builds.
+func readCSV(source io.Reader, fields ...string) []map[string]string {
+	csvReader := csv.NewReader(source)
+	records, err := csvReader.ReadAll()
+	if err != nil {
+		logger.Fatalf("failed to read CSV records: %v", err)
+	}
+	if len(records) == 0 {
+		return nil
+	}
+
+	columns := make(map[string]int, len(records[0]))
+	for i, name := range records[0] {
+		columns[name] = i
+	}
+	for _, field := range fields {
+		if _, ok := columns[field]; !ok {
+			panic(fmt.Errorf("missing CSV column %q", field))
+		}
+	}
+
+	rows := make([]map[string]string, 0, len(records)-1)
+	for _, record := range records[1:] {
+		row := make(map[string]string, len(fields))
+		for _, field := range fields {
+			row[field] = record[columns[field]]
+		}
+		rows = append(rows, row)
+	}
+	return rows
 }
 
 func atoi(s string) int {
